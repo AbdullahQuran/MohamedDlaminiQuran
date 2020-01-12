@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "167421796401",
+    "firebase_url": "https://safestreetapp-7dbbe.firebaseio.com",
+    "project_id": "safestreetapp-7dbbe",
+    "storage_bucket": "safestreetapp-7dbbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167421796401:android:7d71732917f4049ea5f510",
+        "android_client_info": {
+          "package_name": "com.example.safestreetapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167421796401-bhd84kpd9sdlf6kk941hqmkcfs94clte.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.safestreetapp",
+            "certificate_hash": "2af066039a181d75c67c0a1b800799b6de89f201"
+          }
+        },
+        {
+          "client_id": "167421796401-t6tn31k8vkmjvies5pveld0ilgkfe5m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATWLum8wF4t2TOiAoRJEpD_0YzLbII44I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167421796401-t6tn31k8vkmjvies5pveld0ilgkfe5m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

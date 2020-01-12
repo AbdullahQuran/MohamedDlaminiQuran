@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/greyback">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/shield"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:background="@drawable/edittexts">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/user"/>
+
+        <EditText
+            android:id="@+id/et_username_reg"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:hint="@string/reg_username" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@drawable/edittexts">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/phone"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:hint="Phone Number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@drawable/edittexts">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/email"/>
+
+        <EditText
+            android:id="@+id/et_email_reg"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@drawable/edittexts">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/lock"/>
+
+
+
+        <EditText
+            android:id="@+id/et_password_reg"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:hint="@string/reg_password" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@drawable/edittexts">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/lock"/>
+
+        <EditText
+            android:id="@+id/et_password_confirm_reg"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:hint="@string/confirm_password" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonsl"
+        android:text="@string/main_register"
+        android:tooltipText="Register to Safestreet"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#ffffff"
+            android:text="@string/already_registered"/>
+
+        <TextView
+            android:id="@+id/tv_bck_login"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/bck_login"
+            android:tooltipText="Go to Login Page"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

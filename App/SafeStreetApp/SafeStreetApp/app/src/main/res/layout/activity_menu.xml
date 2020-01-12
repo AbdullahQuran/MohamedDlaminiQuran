@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    android:id="@+id/ac_rep_viol"
+    android:fitsSystemWindows="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/greyback">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#752196F3"
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="100dp"
+        android:textSize="50dp"
+        android:text="Menu"/>
+
+    <Button
+        android:id="@+id/btn_report_viol"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttons"
+        android:textSize="20sp"
+        android:text="@string/report_violation"
+        android:tooltipText="Report a Violation"/>
+
+    <Button
+        android:id="@+id/btn_statistics"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:text="@string/statistics"
+        android:tooltipText="See Violation Statistics"/>
+
+    <Button
+        android:id="@+id/btn_my_report"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:text="@string/my_report"
+        android:tooltipText="View Violations You have Reported"/>
+
+    <Button
+        android:id="@+id/btn_request_data"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:text="@string/request_data"
+        android:tooltipText="Get Raw Violation Data Sent to Your Email"
+        android:onClick="mail"/>
+
+</LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/sidebar_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/sidebar"
+        app:menu="@menu/sidebar" />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
